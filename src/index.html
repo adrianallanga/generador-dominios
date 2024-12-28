@@ -42,26 +42,26 @@
       for (i = 0; i < pronombres.length; i++) {
         for (j = 0; j < adjetivos.length; j++) {
           for (k = 0; k < sustantivos.length; k++) {
-            console.log(pronombres[i] + adjetivos[j] + sustantivos[k]);
+            console.log(pronombres[i] + adjetivos[j] + sustantivos[k] + ".com");
           }
         }
       }
 
-      function generardominios() {
-        let contenedor = document.getElementById("listaDominios");
-        contenedor.innerHTML = " ";
-        for (let i = 0; i < 5; i++) {
-          let pronombre = palabraAleatoria(pronombres);
-          let adjetivo = palabraAleatoria(adjetivos);
-          let sustantivo = palabraAleatoria(sustantivos);
-          let dominio = pronombre + adjetivo + sustantivo + ".com";
-          let nuevoElemento = document.createElement("div");
-          nuevoElemento.className = "dominio";
-          nuevoElemento.textContent = dominio;
-          contenedor.appendChild(nuevoElemento);
-        }
-      }
-      generardominios();
+      // function generardominios() {
+      //   let contenedor = document.getElementById("listaDominios");
+      //   contenedor.innerHTML = " ";
+      //   for (let i = 0; i < 5; i++) {
+      //     let pronombre = palabraAleatoria(pronombres);
+      //     let adjetivo = palabraAleatoria(adjetivos);
+      //     let sustantivo = palabraAleatoria(sustantivos);
+      //     let dominio = pronombre + adjetivo + sustantivo + ".com";
+      //     let nuevoElemento = document.createElement("div");
+      //     nuevoElemento.className = "dominio";
+      //     nuevoElemento.textContent = dominio;
+      //     contenedor.appendChild(nuevoElemento);
+      //   }
+      // }
+      // generardominios();
     </script>
   </body>
 </html>
